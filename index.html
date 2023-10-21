@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header">
+                <h1><span>E</span>Food</h1>
+<div> 
+             <a href="#">Home</a>
+                <a href="#">Service</a>
+                <a href="#">Top cities</a>
+                <a href="#">Contract</a>
+</div>
+            
+            <div class="header-icon">
+                <img class="img1" src="./img/eFoodWebdesign (3)/Iconly/Light/Search.svg" alt="">
+                <img class="img2" src="./img/Buy.svg" alt="">
+                <img class="img3"  src="./img/Order.svg" alt="">
+                <button>Sign Up</button>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-title">
+                    <h1>super fast <span> Food <br>delivery</span> service</h1>
+                        <p>We provide super fast-delivery service. Let’s use our <br> services right now and get discounts of up to 50%</p>
+                        <button>Explore Food</button>
+                        <button>Download App</button>
+                </div>
+                <div class="hero-img">
+<img src="./img/scooter.svg" alt="" class="nomer1">
+<img src="./img/eFoodWebdesign/Iconly/Bulk/Search.svg" alt="" class="nomer2">
+<img src="./img/Time.svg" alt="" class="nomer3">
+<img src="./img/Happy customer.svg" alt="" class="nomer4">
+<img src="./img/Doubble sandwich.svg" alt="" class="nomer5">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="our">
+        <div class="container">
+            <div class="our">
+                <h1>Our popular<span>Category</span></h1>
+                <div>
+                    
+                    <button><img src="./img/burger 1.svg" alt=""> Burger</button>
+                    <button><img src="./img/pizza 1.svg" alt="">Pizza</button>
+                    <button><img src="./img/sandwich 1.svg" alt="">sandwich</button>
+                    <button><img src="./img/christmas-dinner 2.svg" alt="">Asian Food</button>
+                    <button><img src="./img/dish 1.svg" alt="">Set Menu</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div #swiperRef="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/Burger with salat.svg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/Burger with salat (1).svg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/Burger with salat (2).svg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/Burger with salat (3).svg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/Burger with salat (4).svg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <p class="append-buttons">
+        <button class="prepend-2-slides">Prepend 2 Slides</button>
+        <button class="prepend-slide">Prepend Slide</button>
+        <button class="append-slide">Append Slide</button>
+        <button class="append-2-slides">Append 2 Slides</button>
+      </p>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          centeredSlides: true,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+          .querySelector(".prepend-2-slides")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.prependSlide([
+              '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+              '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            ]);
+          });
+        document
+          .querySelector(".prepend-slide")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.prependSlide(
+              '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+            );
+          });
+        document
+          .querySelector(".append-slide")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.appendSlide(
+              '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+            );
+          });
+        document
+          .querySelector(".append-2-slides")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.appendSlide([
+              '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+              '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            ]);
+          });
+      </script>
+      <section id="stay">
+        <div class="container">
+            <div class="stay">
+                <img src="./img/food delivery 4.svg" alt="" class="dom">
+                <div>
+                    <h1><span>Stay</span> at home, we will <br>Provide <span>good food</span></h1>
+                    <p>We provide tasty food and superfast delivery at <br> your home.  Let’s use our services right now and <br> get discounts of up to 50%.</p>
+                    <div>
+                        <h6><img src="./img/stopwatch 1.svg" alt="">fasted delivery in 30 Minutes</h6>
+                        <h6><img src="./img/delivery 1.svg" alt="">300+ delivery men</h6>
+                        <h6><img src="./img/shop 1.svg" alt="">500+ restaurant & cafe shop</h6>
+                    </div>
+                    <div>
+                        <button>see more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="food">
+        <div class="container">
+            <div class="food">
+                <h1>Top Food <span>restaurant</span></h1>
+            </div>
+            <div>
+              <img src="./img/img 1.svg" alt="">
+              <img src="./img/img 2.svg" alt="">
+              <img src="./img/img 3.svg" alt="">
+              <img src="./img/img 4.svg" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+
+            </div>
+        </div>
+      </section>
+</body>
+
+</html>                 
