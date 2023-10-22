@@ -291,3 +291,132 @@ margin-top: 30px;
 }
 /* STAY */
 
+.food h1{
+    margin-top: 70px;
+    margin-left: 30PC;
+    color: var(--Primary, #363853);
+font-family: Rubik;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 83.333% */
+text-transform: capitalize;
+
+}
+.food span{
+    color: var(--Secondary, #FF7A50);
+font-family: Rubik;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px;
+text-transform: capitalize;
+}
+.food images1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app span{
+    color: var(--Secondary, #FF7A50);
+font-family: Rubik;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px;
+}
+.app{
+    margin-right: 20px;
+    margin-top: 360px;
+    color: var(--Primary, #363853);
+    font-family: Rubik;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 50px; /* 138.889% */
+
+}
+.app p{
+    margin-left: 25px;
+    color: #363853;
+font-family: Rubik;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px; /* 150% */
+width: 538px;
+height: 94px;
+flex-shrink: 0;
+}
+.app-img{
+    margin-left: 600px;
+    margin-top: -400px;
+
+}
+.offer img{
+    margin-top: 150px;
+    width: 1162px;
+height: 661px;
+flex-shrink: 0;
+}
+.subscride-block h1{
+    color: #FFF;
+text-align: center;
+font-family: Rubik;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.subscride-block p{
+    color: #FFF;
+text-align: center;
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+.subscride-block input{
+    border-radius: 70px;
+background: #FFF;
+box-shadow: 10px 24px 54px 0px rgba(0, 0, 0, 0.07);
+width: 838.5px;
+height: 78px;
+flex-shrink: 0;
+}
+.subscride-button button{
+    padding-right: 20px;
+    margin-right: 50px;
+}
+.subscride-block button{
+    color: #FFF;
+text-align: center;
+font-family: Rubik;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 150% */
+border-radius: 70px;
+background: var(--Secondary, #FF7A50);
+border: none;
+}
+.subscride {
+    background-color: #FF6838;
+}
+.subscride input{
+    position: relative;
+    padding: 17px 0px;
+    border-radius: 70px;
+    box-shadow: 10px 24px 54px 0px rgba(0, 0, 0, 0.07);
+    color: #FFF;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 60px;
+    border: none;
+}
+.footer-img img{
+    margin-left: -140px;
+    margin-top: 100px;
+}
+
